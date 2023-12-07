@@ -210,3 +210,52 @@ color: var(--text-color);
 .footer-link{
 
 }
+.main{
+
+}
+.products{
+
+}
+.products_item:first-child{
+    width: 73px;
+    height: 38px;
+    color: var(--base-color);
+    border-radius: 4px;
+    background: #2196F3;
+}
+.products_item{
+    color: var(--color-primery);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+}
+
+.products_benefits_list{
+    font-family: Roboto;
+    font-style: normal;
+}
+.benefits_item{
+
+}
+.benefits_img{
+    width: 370px;
+        height: 294px;
+}
+.benefits_title{
+    color: var(--color-primery);
+        
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 1.08px;
+}
+.benefits_text{
+    color: var(--text-color);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.48px;
+}
