@@ -17,11 +17,17 @@ body{
 
 
 }
-.header {
+.header-container {
         font-size: 14px;
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
+        width: 1600px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        
 }
 .logo{
 color: var(--color-primery);
