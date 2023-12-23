@@ -245,10 +245,18 @@ color: var(--text-color);
 
 }
 .main{
-
+    display: flex;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    justify-content: center;
 }
 .products{
 
+}
+.products_list{
+    display: flex;
+    gap: 8;
 }
 .products_item:first-child{
     width: 73px;
@@ -270,6 +278,7 @@ color: var(--text-color);
 .products_benefits_list{
     font-family: Roboto;
     font-style: normal;
+    display: flex;
 }
 .benefits_item{
 
