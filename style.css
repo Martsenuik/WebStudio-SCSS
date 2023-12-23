@@ -22,10 +22,14 @@ body{
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.28px;
-    
+        display: flex;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        justify-content: space-between;
 }
 .container {
-            width: 1600px;
+            width: 1200px;
             padding-left: 15px;
             padding-right: 15px;
             margin-right: auto;
@@ -47,7 +51,8 @@ color: var(--color-primery);
 
 }
 .nav-list{
-
+ display: flex;
+ gap: 50px;
 }
 .nav-item{
 
@@ -60,7 +65,8 @@ color: var(--color-title);
 color: var(--active-link);
 }
 .contact-list{
-
+    display: flex;
+    gap: 50px;
 }
 .contact-item{
 
@@ -71,14 +77,15 @@ color: var(--text-color);
 .contact-item:hover .contact-link {
     color: var(--active-link);
 }
-.main{
 
-}
 .hero{
-    width: 1600px;
     height: 600px;
-    flex-shrink: 0;
     background: #2F303A;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    align-items: center;
+    justify-content: center;
 }
 .hero-title{
     width: 696px;
@@ -91,11 +98,13 @@ color: var(--text-color);
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    display: flex;
 }
 .hero-button{
     border-radius: 4px;
         background: #2196F3;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        display: flex;
 }
 .hero-button span {
         color:var(--base-color);
@@ -109,6 +118,11 @@ color: var(--text-color);
         letter-spacing: 0.96px;
 }
 .features{
+       display: flex;
+       padding-top: 90px;
+       padding-bottom: 90px;
+       align-items: center;
+       justify-content: space-between;
 
 }
 .feature-list{
@@ -116,6 +130,8 @@ color: var(--text-color);
     font-style: normal;
     font-size: 14px;
     font-family: Roboto;
+    display: flex;
+    gap: 30;
 }
 .feature-item{
 
@@ -133,7 +149,7 @@ color: var(--text-color);
     
 }
 .work{
-    
+
 }
 .work-title{
     color: var(--color-primery);
@@ -144,17 +160,19 @@ color: var(--text-color);
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    padding-bottom: 50px;
 }
 .work-img{
         width: 370px;
         height: 294px;
-        
 }
 .team{
     background: #F5F4FA;
-    width: 1600px;
-    height: 648px;
-        
+    display: flex;    
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    justify-content: center;
 }
 .team-title{
     color: var(--color-primery);
@@ -165,6 +183,7 @@ color: var(--text-color);
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    padding-bottom: 50px;
 }
 .team-list{
     letter-spacing: 0.48px;
@@ -173,6 +192,8 @@ color: var(--text-color);
     font-family: Roboto;
     text-align: center;
     font-size: 16px;
+    display: flex;
+    gap: 30px;
 }
 .team-item{
 
@@ -191,8 +212,9 @@ color: var(--text-color);
 }
 .footer{
     background: #2F303A;
-    width: 1600px;
-    height: 252px;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     color: var(--base-color);
@@ -202,6 +224,7 @@ color: var(--text-color);
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
+    display: flex;
 }
 
 .web {
@@ -215,6 +238,8 @@ color: var(--text-color);
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
+    display: flex;
+
 }
 .footer-link{
 
