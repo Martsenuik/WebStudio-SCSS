@@ -81,10 +81,9 @@ color: var(--text-color);
 .hero{
     height: 600px;
     background: #2F303A;
-    display: flex;
     padding-top: 200px;
     padding-bottom: 280px;
-    align-items: center;
+    display: flex;
     justify-content: center;
 }
 .hero-title{
@@ -239,6 +238,7 @@ color: var(--text-color);
     line-height: 24px;
     letter-spacing: 0.42px;
     display: flex;
+    flex-direction: column;
 
 }
 .footer-link{
@@ -256,11 +256,11 @@ color: var(--text-color);
 }
 .products_list{
     display: flex;
-    gap: 8;
+    justify-content: center;
+    gap: 52;
+    
 }
 .products_item:first-child{
-    width: 73px;
-    height: 38px;
     color: var(--base-color);
     border-radius: 4px;
     background: #2196F3;
@@ -273,19 +273,14 @@ color: var(--text-color);
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0.48px;
+    display: flex;
 }
 
 .products_benefits_list{
     font-family: Roboto;
     font-style: normal;
     display: flex;
-}
-.benefits_item{
-
-}
-.benefits_img{
-    width: 370px;
-        height: 294px;
+     flex-wrap: wrap;  
 }
 .benefits_title{
     color: var(--color-primery);
