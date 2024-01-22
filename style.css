@@ -85,6 +85,7 @@ color: var(--text-color);
     padding-bottom: 280px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .hero-title{
     width: 696px;
@@ -97,25 +98,24 @@ color: var(--text-color);
     line-height: 60px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    display: flex;
 }
 .hero-button{
+    /* width: 216px;
+    height: 50px; */
+    display:inline-block;
+    padding: 10px 32px;
     border-radius: 4px;
-        background: #2196F3;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        display: flex;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); 
+    color: var(--base-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+
 }
-.hero-button span {
-        color:var(--base-color);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 30px;
-        
-        letter-spacing: 0.96px;
-}
+
 .features{
        display: flex;
        padding-top: 90px;
@@ -244,12 +244,10 @@ color: var(--text-color);
 .footer-link{
 
 }
-.main{
-    display: flex;
-    align-items: center;
+///////////* портфоліо *///////////
+.main{ 
     padding-top: 94px;
     padding-bottom: 50px;
-    justify-content: center;
 }
 .products{
 
@@ -257,7 +255,8 @@ color: var(--text-color);
 .products_list{
     display: flex;
     justify-content: center;
-    gap: 52;
+    column-gap: 52px;
+    margin-bottom: 20px;
     
 }
 .products_item:first-child{
