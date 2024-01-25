@@ -86,6 +86,7 @@ color: var(--text-color);
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 .hero-title{
     width: 696px;
@@ -130,9 +131,15 @@ color: var(--text-color);
     font-size: 14px;
     font-family: Roboto;
     display: flex;
-    gap: 30;
+    gap: 30px;
 }
 .feature-item{
+    width: 270px;
+    height: 120px;
+    gap: 30;
+    background-color: rgba(245, 244, 250, 1);
+}
+.feature-img{
 
 }
 .feature-title{
@@ -195,7 +202,10 @@ color: var(--text-color);
     gap: 30px;
 }
 .team-item{
-
+width: 270px;
+    height: 368px;
+    border-radius: 0px 0px 4px 4px;
+        background: #FFF;
 }
 .team-img{
     width: 270px;
@@ -244,7 +254,7 @@ color: var(--text-color);
 .footer-link{
 
 }
-///////////* портфоліо *///////////
+/* портфоліо */
 .main{ 
     padding-top: 94px;
     padding-bottom: 50px;
@@ -255,11 +265,11 @@ color: var(--text-color);
 .products_list{
     display: flex;
     justify-content: center;
-    column-gap: 52px;
+    gap: 18px;
     margin-bottom: 20px;
     
 }
-.products_item:first-child{
+.products_item:hover{
     color: var(--base-color);
     border-radius: 4px;
     background: #2196F3;
@@ -273,6 +283,14 @@ color: var(--text-color);
     line-height: 26px;
     letter-spacing: 0.48px;
     display: flex;
+    width: 97px;
+    height: 38px;
+    border-radius: 4px;
+    background: #F5F4FA;
+    align-items: center;
+}
+.products_text{
+   align-items: center;
 }
 
 .products_benefits_list{
