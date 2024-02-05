@@ -132,16 +132,18 @@ color: var(--text-color);
     font-family: Roboto;
     display: flex;
     gap: 30px;
+
+}
+.feature-list::before{
+    content:'blob: https: //www.figma.com/e7d9168d-670c-47b6-8a01-ddc35bc988d9';
 }
 .feature-item{
     width: 270px;
     height: 120px;
     gap: 30;
-    background-color: rgba(245, 244, 250, 1);
-}
-.feature-img{
 
 }
+
 .feature-title{
     color: var(--color-primery);
     font-weight: 700;
