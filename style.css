@@ -49,8 +49,7 @@ header {
     display: flex;
     gap: 50px;
 }
-
-.header-nav-item {
+.nav-item {
     color: #212121;
     font-size: 14px;
     letter-spacing: 0.28px;
@@ -79,8 +78,8 @@ header {
     letter-spacing: 0.28px;
 }
 
-.section {
-    background-image: linear-gradient(#2F303A66, #2F303A66), url(img/img1.png);
+.main {
+    background-image: linear-gradient(#2F303A66, #2F303A66), url(img/img1.jpg);
     opacity: 0.9;
     width: 1450px;
     height: 600px;
@@ -92,7 +91,7 @@ header {
     flex-direction: column;
 }
 
-.section-title {
+.main-title {
     width: 696px;
     color: #FFF;
     text-align: center;
@@ -104,7 +103,7 @@ header {
 
 }
 
-.section-button-text {
+.main-button-text {
     color: #FFF;
     text-align: center;
     font-size: 16px;
@@ -113,7 +112,7 @@ header {
     letter-spacing: 0.96px;
 }
 
-.section-button {
+.main-button {
     width: 216px;
     height: 50px;
     border-radius: 4px;
@@ -152,7 +151,9 @@ header {
 .info-antena {
     background-image: url(img/antenna.svg);
 }
-
+.info-svg{
+    fill: #000;
+}
 .info-clock {
     background-image: url(img/clock.svg);
 }
