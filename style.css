@@ -65,8 +65,12 @@ header {
     display: flex;
     gap: 50px;
 }
-
-.header-list-item:hover {
+.header-svg{
+        fill: #757575;
+        margin-right: 10px;
+}
+.header-list-item:hover ,
+ .header-svg:hover {
     color: #2196F3;
     font-size: 14px;
     letter-spacing: 0.28px;
@@ -77,7 +81,7 @@ header {
     font-size: 14px;
     letter-spacing: 0.28px;
 }
-
+/**************** main ***************/
 .main {
     background-image: linear-gradient(#2F303A66, #2F303A66), url(img/img1.jpg);
     opacity: 0.9;
@@ -121,7 +125,7 @@ header {
     flex-shrink: 0;
     border: none;
 }
-
+/*********** section info **************/
 .section-info {
     display: flex;
     padding-top: 90px;
@@ -137,15 +141,14 @@ header {
 .info-item {
     padding-left: 30px;
 }
-
-.info-div {
-    width: 270px;
-    height: 120px;
+.info-svg {
     border-radius: 4px;
     background: #F5F4FA;
-    background-repeat: no-repeat;
     margin-bottom: 30px;
     background-position: center;
+    padding: 25px 100px;
+    width: 270px;
+        height: 120px;
 }
 
 .info-antena {
@@ -190,7 +193,12 @@ header {
     letter-spacing: 0.42px;
 }
 
-.whatwedo-title {
+/**********  section photo ************/
+
+.photo{
+
+}
+.photo-title {
     color: #212121;
     text-align: center;
     font-size: 36px;
@@ -199,16 +207,19 @@ header {
     padding-bottom: 50px;
 }
 
-.whatwedo-list {
+.photo-list {
     display: flex;
     margin-bottom: 94px;
 }
 
-.whatwedo-img {
+.photo-img {
     width: 370px;
     height: 294px;
     padding-left: 30px;
 }
+
+/************* ourteam *****************/
+
 
 .section-ourteam {
     background: #F5F4FA;
@@ -238,7 +249,24 @@ header {
     height: 260px;
     padding-bottom: 30px;
 }
+.svg-list{
+            display: flex;
+            justify-content: space-between;
+            padding-left: 44px;
+            padding-right: 44px;
+            padding-top: 28px;
+            fill: #AFB1B8;
 
+}
+.svg-item{
+            padding: 10px 12px;
+}
+.svg-item:hover {
+    fill: #FFF;
+    border-radius: 100%;
+    background: #2196F3;
+    transition: all 0.2s ease-out;
+}
 .ourteam-subtitles {
     color: #212121;
     text-align: center;
@@ -256,11 +284,104 @@ header {
     letter-spacing: 0.48px;
 }
 
+/************* costumers ***************/
+
+.costumers{
+   padding-top: 59px;
+   padding-bottom: 94px;
+}
+.costumers-title{
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    padding-bottom: 50px;
+}
+.costumers-list{
+   display: flex;
+   gap: 30px;
+
+}
+.costumers-item{
+            width: 170px;
+                height: 92px;
+                border-radius: 4px;
+                border: 1px solid #AFB1B8;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+}
+.costumers-svg{
+fill: #AFB1B8;
+            
+}
+.costumers-item:hover{
+    border-color: #2196F3;
+}
+.costumers-item:hover .costumers-svg {
+    fill : #2196F3;
+}
+
+/**************** footer ***************/
+
+footer {
+    width: 1450px;
+    height: 252px;
+    flex-shrink: 0;
+    background: #2F303A;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address {
+    width: 231px;
+    height: 21px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171%;
+    letter-spacing: 0.42px;
+}
+
+.mail {
+    width: 136px;
+    height: 21px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171%;
+    letter-spacing: 0.42px;
+}
+
+.phone {
+    width: 231px;
+    height: 21px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 171%;
+    letter-spacing: 0.42px;
+}
+
+.logostudio2 {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/************ portfolio ****************/
 .card {
     width: 270px;
-    height: 368px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    padding-bottom: 42px;
 }
 
 .portfolio-button-list {
@@ -344,52 +465,3 @@ img {
     margin-top: 94px;
 }
 
-footer {
-    width: 1450px;
-    height: 252px;
-    flex-shrink: 0;
-    background: #2F303A;
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-.address {
-    width: 231px;
-    height: 21px;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171%;
-    letter-spacing: 0.42px;
-}
-
-.mail {
-    width: 136px;
-    height: 21px;
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171%;
-    letter-spacing: 0.42px;
-}
-
-.phone {
-    width: 231px;
-    height: 21px;
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171%;
-    letter-spacing: 0.42px;
-}
-
-.logostudio2 {
-    color: #FFF;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    letter-spacing: 0.78px;
-    display: flex;
-    margin-bottom: 20px;
-}
