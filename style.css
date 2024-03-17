@@ -195,27 +195,42 @@ header {
 
 /**********  section photo ************/
 
-.photo{
-
+.photo {
+    margin-bottom: 94px;
 }
-.photo-title {
-    color: #212121;
+
+.title-photo {
+    display: block;
     text-align: center;
     font-size: 36px;
-    font-weight: 700;
     letter-spacing: 1.08px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .photo-list {
     display: flex;
-    margin-bottom: 94px;
+    justify-content: center;
+    column-gap: 30px;
 }
 
-.photo-img {
-    width: 370px;
-    height: 294px;
-    padding-left: 30px;
+.photo-item {
+    position: relative;
+}
+
+.photo-text {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 
 /************* ourteam *****************/
@@ -374,6 +389,39 @@ footer {
     letter-spacing: 0.78px;
     display: flex;
     margin-bottom: 20px;
+}
+
+/************ footer2 ******************/
+
+.footer2{
+    padding-left: 156px;
+}
+.footer-join{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+.join-list{
+    display: flex;
+        padding-top: 32px;
+        fill: #FFFFFF;
+}
+.join-item{
+    margin-right: 32px;
+        padding: 10px 12px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.10);
+}
+
+.join-item:hover{
+    fill: #2196F3;
+    width: 44px;
+    height: 44px;
+}
+.join-svg{
+
 }
 
 /************ portfolio ****************/
