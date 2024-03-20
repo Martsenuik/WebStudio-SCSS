@@ -351,6 +351,10 @@ footer {
     padding-bottom: 60px;
 }
 
+.footer-box-parent {
+    display: flex;
+}
+
 .address {
     width: 231px;
     height: 21px;
@@ -391,39 +395,33 @@ footer {
     margin-bottom: 20px;
 }
 
-/************ footer2 ******************/
-
-.footer2{
+.footer-box2 {
     padding-left: 156px;
 }
-.footer-join{
+
+.footer-join {
     color: #FFF;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.42px;
-        text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
-.join-list{
+
+.footer-icon-list {
     display: flex;
-        padding-top: 32px;
-        fill: #FFFFFF;
+    padding-top: 32px;
+    fill: #FFFFFF;
 }
-.join-item{
+
+.footer-icon-item {
     margin-right: 32px;
-        padding: 10px 12px;
-        border-radius: 100%;
-        background: rgba(255, 255, 255, 0.10);
+    padding: 10px 12px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.10);
 }
-
-.join-item:hover{
+.footer-icon-item:hover{
     fill: #2196F3;
-    width: 44px;
-    height: 44px;
 }
-.join-svg{
-
-}
-
 /************ portfolio ****************/
 .card {
     width: 270px;
@@ -512,4 +510,3 @@ img {
 .footer-portfolio {
     margin-top: 94px;
 }
-
