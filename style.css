@@ -108,12 +108,7 @@ header {
 }
 
 .main-button-text {
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 187%;
-    letter-spacing: 0.96px;
+
 }
 
 .main-button {
@@ -122,8 +117,114 @@ header {
     border-radius: 4px;
     background: #2196F3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    flex-shrink: 0;
     border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 187%;
+    letter-spacing: 0.96px;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    padding: 15px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 1px 3px 0px 
+    rgba(0, 0, 0, 0.12), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+     0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    transform: translate(-50%, -50%);
+}
+.modal-text{
+        width: 448px;
+        color: #212121;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+}
+.modal-list{
+        display: flex;
+        gap: 10px;
+}
+.modal-item{
+
+}
+.modal-p{
+        color: #757575;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.12px;
+}
+.modal-input{
+        width: 448px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+}
+.modal-textarea{
+       width: 448px;
+        height: 120px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 33, 33, 0.20);
+}
+.checkbox-text{
+    width: 400.623px;
+    height: 24px;
+    color: #757575;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+.checkbox-link{
+    color: #2196F3;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-decoration-line: underline;
+}
+.checkbox-button{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
 }
 /*********** section info **************/
 .section-info {
@@ -199,7 +300,7 @@ header {
     margin-bottom: 94px;
 }
 
-.title-photo {
+.photo-title {
     display: block;
     text-align: center;
     font-size: 36px;
