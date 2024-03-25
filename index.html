@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
-    <title>Main Page</title>
+    <title>WebStudio</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -38,20 +38,20 @@
         </ul>
       </nav>
 
-      <ul class="header-list">
-        <li>
-          <svg class="header-svg" width="16px" height="12px">
+      <ul class="header-contact-list">
+        <li class="header-contact-item">
+          <svg class="header-contact-svg" width="16" height="12">
             <use href="./img/symbol-defs.svg#envelope"></use>
           </svg>
-          <a href="mailto:info@devstudio.com" class="header-list-item"
+          <a href="mailto:info@devstudio.com" class="header-contact-a"
             >info@devstudio.com</a
           >
         </li>
-        <li>
-          <svg class="header-svg" width="10px" height="16px">
+        <li class="header-contact-item">
+          <svg class="header-contact-svg" width="10" height="16">
             <use href="./img/symbol-defs.svg#smartphone"></use>
           </svg>
-          <a href="tel:+380961111111" class="header-list-item"
+          <a href="tel:+380961111111" class="header-contact-a"
             >+38 096 111 11 11</a
           >
         </li>
@@ -68,7 +68,11 @@
 
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="btn close-modal">x</button>
+            <button class="close close-modal">
+              <svg class="button-svg">
+                <use href="./img/symbol-defs.svg#vector0"></use>
+              </svg>
+            </button>
             <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
             <ul class="modal-list">
               <form>
@@ -98,7 +102,11 @@
                 <li class="modal-item">
                   <label class="modal-p">
                     Коментар
-                    <textarea class="modal-textarea" name="Comment"></textarea>
+                    <textarea
+                      class="modal-textarea"
+                      name="Comment"
+                      placeholder="Введіть текст"
+                    ></textarea>
                   </label>
                 </li>
               </form>
@@ -108,7 +116,7 @@
               Погоджуюся з розсилкою та приймаю
               <a class="checkbox-link" href="#">Умови договору</a>
             </label>
-            <button class="checkbox-button" type="button">Відправити</button>
+            <button class="checkbox-button" type="submit">Відправити</button>
           </div>
         </div>
       </section>
@@ -428,6 +436,25 @@
               </svg>
             </li>
           </ul>
+        </div>
+        <div class="footer-box3">
+          <p class="footer-join">Підпишіться на розсилку</p>
+          <div class="subscription-box">
+            <lable class="subscription-lable">
+              <input
+                class="subscription-input"
+                type="email"
+                name="E-mail"
+                placeholder="E-mail"
+              />
+            </lable>
+            <button class="subscription-button">
+              Підписатися
+              <svg class="subscription-svg" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

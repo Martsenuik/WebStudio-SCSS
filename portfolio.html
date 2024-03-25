@@ -28,23 +28,29 @@
       >
       <nav class="navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="header-nav-item">Студія</a></li>
+          <li><a href="index.html" class="nav-item">Студія</a></li>
           <li>
-            <a href="portfolio.html" class="header-nav-item">Портфоліо</a>
+            <a href="portfolio.html" class="nav-item">Портфоліо</a>
           </li>
           <li>
-            <a href="#contacts" class="header-nav-item">Контакти</a>
+            <a href="#contacts" class="nav-item">Контакти</a>
           </li>
         </ul>
       </nav>
 
       <ul class="header-list">
         <li>
+          <svg class="header-svg" width="16px" height="12px">
+            <use href="./img/symbol-defs.svg#envelope"></use>
+          </svg>
           <a href="mailto:info@devstudio.com" class="header-list-item"
             >info@devstudio.com</a
           >
         </li>
         <li>
+          <svg class="header-svg" width="10px" height="16px">
+            <use href="./img/symbol-defs.svg#smartphone"></use>
+          </svg>
           <a href="tel:+380961111111" class="header-list-item"
             >+38 096 111 11 11</a
           >
@@ -161,26 +167,72 @@
         </ul>
       </section>
     </main>
-    <footer class="footer-portfolio">
-      <div class="container">
-        <a href="index.html" class="logostudio2"
-          ><span class="logoweb">Web</span>Studio</a
-        >
-        <ul>
-          <li>
-            <address id="contacts" class="address">
-              м. Київ, пр-т Лесі Українки, 26
-            </address>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="mail"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
-          </li>
-        </ul>
+    <footer class="footer">
+      <div class="container footer-box-parent">
+        <div class="footer-box1">
+          <a href="index.html" class="logostudio2"
+            ><span class="logoweb">Web</span>Studio</a
+          >
+          <ul>
+            <li>
+              <address id="contacts" class="address">
+                м. Київ, пр-т Лесі Українки, 26
+              </address>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mail"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box2">
+          <h3 class="footer-join">приєднуйтесь</h3>
+          <ul class="footer-icon-list">
+            <li class="footer-icon-item">
+              <svg class="footer-svg" width="20" height="20">
+                <use href="img/symbol-defs.svg#instagram"></use>
+              </svg>
+            </li>
+            <li class="footer-icon-item">
+              <svg class="footer-svg" width="20" height="20">
+                <use href="img/symbol-defs.svg#twitter"></use>
+              </svg>
+            </li>
+            <li class="footer-icon-item">
+              <svg class="footer-svg" width="20" height="20">
+                <use href="img/symbol-defs.svg#facebook"></use>
+              </svg>
+            </li>
+            <li class="footer-icon-item">
+              <svg class="footer-svg" width="20" height="20">
+                <use href="img/symbol-defs.svg#linkedin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box3">
+          <p class="footer-join">Підпишіться на розсилку</p>
+          <div class="subscription-box">
+            <lable class="subscription-lable">
+              <input
+                class="subscription-input"
+                type="email"
+                name="E-mail"
+                placeholder="E-mail"
+              />
+            </lable>
+            <button class="subscription-button">
+              Підписатися
+              <svg class="subscription-svg" width="24" height="24">
+                <use href="./img/symbol-defs.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
