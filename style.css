@@ -56,18 +56,22 @@
      letter-spacing: 0.28px;
  }
 
- .header-nav-item:hover {
-     color: #2196F3;
+ .line{
+     position: relative;
  }
 
- .active::after {
-     content: '';
-     width: 100%;
-     height: 4px;
-     background: #2196F3;
-     display: block;
-     margin-top: px;
-     border-radius: 2px;
+ .line::after{
+      position: absolute;
+      content: '';
+      width: 73px;
+       height: 4px;
+      background: #2196F3;
+      display: block;
+      top: 44px; 
+ }
+
+ .nav-item:hover {
+     color: #2196F3;
  }
 
  .header-contact-list {
@@ -75,13 +79,15 @@
      gap: 30px;
  }
 
- .header-contact-item:hover .header-contact-svg {
-     fill: rgba(33, 150, 243, 1);
-     color: rgba(33, 150, 243, 1);
- }
-
+.header-contact-a:hover .header-contact-svg {
+    fill: #2196F3;
+}
+.header-contact-a:hover {
+    color: #2196F3;
+}
  .header-contact-svg {
      fill: rgba(117, 117, 117, 1);
+     margin-right: 9px;
  }
 
  .header-contact-a {
@@ -92,7 +98,7 @@
      letter-spacing: 0.28px;
  }
 
- /**************** main ***************/
+ /**************** main **************/
  .main {
      background-image: linear-gradient(#2F303A66, #2F303A66), url(img/img1.jpg);
      opacity: 0.9;
@@ -118,8 +124,6 @@
  }
 
  .main-button {
-     width: 200px;
-     height: 50px;
      border-radius: 4px;
      background: #2196F3;
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -130,6 +134,7 @@
      font-weight: 700;
      line-height: 187%;
      letter-spacing: 0.96px;
+     padding: 10px 32px;
  }
 
  .backdrop {
@@ -209,6 +214,14 @@
      padding-top: 10px;
  }
 
+ .modal-item:focus-within {
+    fill: #2196F3;
+ } 
+ .modal-input:focus-within {
+    border-color: #2196F3;
+  }
+
+
  .modal-p {
      color: #757575;
      font-family: Roboto;
@@ -221,6 +234,7 @@
      width: 448px;
      height: 40px;
      border-radius: 4px;
+     padding-left: 40px;
      border: 1px solid rgba(33, 33, 33, 0.20);
  }
 
@@ -269,7 +283,9 @@
      display: flex;
      justify-content: center;
  }
-
+.checkbox-p{
+    margin-left: 10px;
+}
  .checkbox-link {
      color: #2196F3;
      font-family: Roboto;
@@ -298,8 +314,14 @@
      margin-left: 165px;
      margin-top: 20px;
  }
-
- /*********** section info **************/
+ 
+.modal-input:active,
+.modal-input:hover,
+.modal-input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+ /*********** section info************/
  .section-info {
      display: flex;
      padding-top: 90px;
@@ -624,6 +646,7 @@
      background: rgba(33, 150, 243, 0.00);
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
      margin-right: 12px;
+     color: #fff;
  }
 
  .subscription-button {
@@ -636,10 +659,9 @@
      font-weight: 700;
      line-height: 30px;
      letter-spacing: 0.96px;
-     width: 200px;
-     height: 50px;
      align-items: center;
      text-align: center;
+     padding: 10px 52px;
      border-radius: 4px;
      background: #2196F3;
      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -650,7 +672,7 @@
      align-items: center;
  }
 
- /************ portfolio ****************/
+ /************ portfolio**************/
  .card {
      width: 270px;
      border-radius: 0px 0px 4px 4px;

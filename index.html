@@ -2,7 +2,7 @@
 <html lange="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -28,7 +28,7 @@
       >
       <nav class="navigation">
         <ul class="nav-list">
-          <li><a href="index.html" class="nav-item">Студія</a></li>
+          <li><a href="index.html" class="nav-item line">Студія</a></li>
           <li>
             <a href="portfolio.html" class="nav-item">Портфоліо</a>
           </li>
@@ -40,18 +40,17 @@
 
       <ul class="header-contact-list">
         <li class="header-contact-item">
-          <svg class="header-contact-svg" width="16" height="12">
-            <use href="./img/symbol-defs.svg#envelope"></use>
-          </svg>
-          <a href="mailto:info@devstudio.com" class="header-contact-a"
-            >info@devstudio.com</a
+          <a href="mailto:info@devstudio.com" class="header-contact-a">
+            <svg class="header-contact-svg" width="16" height="12">
+              <use href="./img/symbol-defs.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
           >
         </li>
         <li class="header-contact-item">
-          <svg class="header-contact-svg" width="10" height="16">
-            <use href="./img/symbol-defs.svg#smartphone"></use>
-          </svg>
-          <a href="tel:+380961111111" class="header-contact-a"
+          <a href="tel:+380961111111" class="header-contact-a">
+            <svg class="header-contact-svg" width="10" height="16">
+              <use href="./img/symbol-defs.svg#smartphone"></use></svg
             >+38 096 111 11 11</a
           >
         </li>
@@ -74,55 +73,51 @@
               </svg>
             </button>
             <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
-            <ul class="modal-list">
-              <form>
-                <li class="modal-item">
-                  <label class="modal-p">
-                    Ім'я
-                    <input
-                      class="modal-input"
-                      type="text"
-                      name="name"
-                      placeholder=""
-                    />
-                    <svg class="input-icon-name" width="12" height="12">
-                      <use href="./img/symbol-defs.svg#vector1"></use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="modal-item">
-                  <label class="modal-p">
-                    Телефон
-                    <input class="modal-input" type="tel" name="tel" />
-                    <svg class="input-icon-tel" width="13" height="13">
-                      <use href="./img/symbol-defs.svg#vector2"></use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="modal-item">
-                  <label class="modal-p">
-                    Пошта
-                    <input class="modal-input" type="email" name="email" />
-                    <svg class="input-icon-email" width="15" height="12">
-                      <use href="./img/symbol-defs.svg#vector3"></use>
-                    </svg>
-                  </label>
-                </li>
-                <li class="modal-item">
-                  <label class="modal-p">
-                    Коментар
-                    <textarea
-                      class="modal-textarea"
-                      name="Comment"
-                      placeholder="Введіть текст"
-                    ></textarea>
-                  </label>
-                </li>
-              </form>
-            </ul>
+          <form class="modal-list">
+            <div class="modal-item">
+              <label class="modal-p">
+                Ім'я
+                <input
+                  class="modal-input"
+                  type="text"
+                  name="name"
+                  placeholder=""
+                />
+                <svg class="input-icon-name" width="12" height="12">
+                  <use href="./img/symbol-defs.svg#vector1"></use>
+                </svg>
+              </label>
+            <div class="modal-item">
+              <label class="modal-p">
+                Телефон
+                <input class="modal-input" type="tel" name="tel" />
+                <svg class="input-icon-tel" width="13" height="13">
+                  <use href="./img/symbol-defs.svg#vector2"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="modal-item">
+              <label class="modal-p">
+                Пошта
+                <input class="modal-input" type="email" name="email" />
+                  <svg class=" modal-input-svg input-icon-email" width="15" height="12">  
+                  <use href="./img/symbol-defs.svg#vector3"></use>
+                </svg>
+              </label>
+            <div class="modal-item">
+              <label class="modal-p">
+                Коментар
+                <textarea
+                  class="modal-textarea"
+                  name="Comment"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
+            </div>
+            </form>
             <label class="checkbox-text">
               <input type="checkbox" name="checkbox" />
-              Погоджуюся з розсилкою та приймаю
+              <span class="checkbox-p">Погоджуюся з розсилкою та приймаю</span>
               <a class="checkbox-link" href="#">Умови договору</a>
             </label>
             <button class="checkbox-button" type="submit">Відправити</button>
