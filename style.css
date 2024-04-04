@@ -214,7 +214,7 @@
      padding-top: 10px;
  }
 
- .modal-item:focus-within {
+ .modal-item:focus-within, .modal-item:active {
     fill: #2196F3;
  } 
  .modal-input:focus-within {
@@ -724,6 +724,17 @@
      padding-bottom: 94px;
  }
 
+ .box{
+    position: relative;
+        height: 300px;
+        overflow: hidden;
+
+ }
+
+ .box:hover .overlay {
+    transform: translatey(0);
+}
+
  .portfoliocard {
      width: calc((100% - 15px * 6) / 3);
      border: 1px solid #EEE;
@@ -754,6 +765,26 @@
      padding-bottom: 20px;
  }
 
+ .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 304px;
+    background: rgba(33, 150, 243, 0.90);
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+    padding: 63px 24px;
+}
+
+ .overlay-text{
+        width: 322px;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.54px;
+ }
  img {
      width: 370px;
      height: 294px;
