@@ -1,0 +1,49 @@
+.costumers {
+    padding-top: 59px;
+    padding-bottom: 94px;
+}
+
+.costumers-title {
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    padding-bottom: 50px;
+}
+
+.costumers-list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.costumers-item {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.costumers-svg {
+    fill: #AFB1B8;
+
+}
+
+.costumers-item:hover {
+    border-color: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.costumers-item:hover .costumers-svg {
+    fill: #2196F3;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
