@@ -55,6 +55,12 @@ header {
   font-size: 14px;
   letter-spacing: 0.28px;
 }
+.nav-item:hover {
+  color: #2196F3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .active {
   position: relative;
@@ -68,13 +74,6 @@ header {
   background: #2196F3;
   display: block;
   top: 44px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-item:hover {
-  color: #2196F3;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -364,7 +363,7 @@ img {
 }
 
 .main {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(img/img1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img1.jpg);
   opacity: 0.9;
   width: 1450px;
   height: 600px;

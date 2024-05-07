@@ -31,6 +31,12 @@ header {
     color: #212121;
     font-size: 14px;
     letter-spacing: 0.28px;
+    &:hover {
+            color: #2196F3;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .active {
@@ -50,12 +56,7 @@ header {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-item:hover {
-    color: #2196F3;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .header-contact-list {
     display: flex;
