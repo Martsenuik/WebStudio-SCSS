@@ -65,7 +65,6 @@ header {
 .active {
   position: relative;
 }
-
 .active::after {
   position: absolute;
   content: "";
@@ -84,20 +83,6 @@ header {
   gap: 30px;
 }
 
-.header-contact-a:hover .header-contact-svg {
-  fill: #2196F3;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact-a:hover {
-  color: #2196F3;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header-contact-svg {
   fill: #757575;
   margin-right: 9px;
@@ -109,6 +94,18 @@ header {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+}
+.header-contact-a:hover .header-contact-svg {
+  fill: #2196F3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact-a:hover {
+  color: #2196F3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -178,7 +175,7 @@ footer {
 .footer-icon-list {
   display: flex;
   padding-top: 32px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .footer-icon-item {
@@ -187,7 +184,6 @@ footer {
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.1);
 }
-
 .footer-icon-item:hover {
   background: #2196F3;
 }
@@ -235,131 +231,6 @@ footer {
   align-items: center;
 }
 
-/************ portfolio**************/
-.card {
-  width: 270px;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  padding-bottom: 42px;
-}
-
-.portfolio-button-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 94px;
-  gap: 8px;
-}
-
-.portfolio-button {
-  padding: 6px 22px;
-  border-radius: 4px;
-  background: #F5F4FA;
-  border-color: #FFF;
-  border: none;
-}
-
-.portfolio-button-text {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 163%;
-  letter-spacing: 0.48px;
-}
-
-.portfolio-button:hover {
-  background: #2196F3;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-button:hover .portfolio-button-text {
-  color: #FFFFFF;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfoliocard-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  gap: 30px;
-  padding-bottom: 94px;
-}
-
-.box {
-  position: relative;
-  height: 300px;
-  overflow: hidden;
-}
-
-.box:hover .overlay {
-  transform: translatey(0);
-}
-
-.portfoliocard {
-  width: calc((100% - 90px) / 3);
-  border: 1px solid #EEE;
-}
-
-.portfoliocard:hover {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
-
-.portfoliocard-title {
-  color: #212121;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 200%;
-  letter-spacing: 1.08px;
-  padding-left: 24px;
-  padding-top: 20px;
-}
-
-.portfoliocard-text {
-  width: 322px;
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 188%;
-  letter-spacing: 0.48px;
-  padding-left: 24px;
-  padding-bottom: 20px;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 304px;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  transition: transform 250ms ease-in-out;
-  padding: 63px 24px;
-}
-
-.overlay-text {
-  width: 322px;
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.54px;
-}
-
-img {
-  width: 370px;
-  height: 294px;
-}
-
-.footer-portfolio {
-  margin-top: 94px;
-}
-
 .main {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/img1.jpg);
   opacity: 0.9;
@@ -404,7 +275,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5019607843);
+  background-color: #000;
   opacity: 1;
 }
 
@@ -439,7 +310,6 @@ img {
   height: 11px;
   fill: #000;
 }
-
 .button-svg:hover {
   fill: #2196F3;
   transition-property: color;
@@ -484,10 +354,6 @@ img {
   fill: #2196F3;
 }
 
-.modal-input:focus-within {
-  border-color: #2196F3;
-}
-
 .modal-p {
   color: #757575;
   font-family: Roboto;
@@ -501,7 +367,10 @@ img {
   height: 40px;
   border-radius: 4px;
   padding-left: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid #212121;
+}
+.modal-input:focus-within {
+  border-color: #2196F3;
 }
 
 .input-icon-name {
@@ -525,7 +394,7 @@ img {
 .modal-textarea {
   width: 416px;
   height: 96px;
-  color: rgba(117, 117, 117, 0.5019607843);
+  color: #757575;
   font-family: Roboto;
   font-size: 12px;
   font-weight: 400;
@@ -535,7 +404,7 @@ img {
   width: 448px;
   height: 120px;
   border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid #212121;
 }
 
 .checkbox-text {
@@ -567,7 +436,7 @@ img {
 
 .checkbox-button {
   border: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  box-shadow: 0px 4px 4px 0px #000;
   color: #ffffff;
   text-align: center;
   font-family: Roboto;
@@ -739,7 +608,6 @@ img {
 .svg-item {
   padding: 10px 12px;
 }
-
 .svg-item:hover {
   fill: #FFF;
   border-radius: 100%;
@@ -795,16 +663,15 @@ img {
   align-items: center;
   justify-content: center;
 }
-
-.costumers-svg {
-  fill: #AFB1B8;
-}
-
 .costumers-item:hover {
   border-color: #2196F3;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.costumers-svg {
+  fill: #AFB1B8;
 }
 
 .costumers-item:hover .costumers-svg {
@@ -839,6 +706,19 @@ img {
   border-color: #FFF;
   border: none;
 }
+.portfolio-button:hover {
+  background: #2196F3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-button:hover .portfolio-button-text {
+  color: #ffffff;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .portfolio-button-text {
   color: #212121;
@@ -847,21 +727,6 @@ img {
   font-weight: 500;
   line-height: 163%;
   letter-spacing: 0.48px;
-}
-
-.portfolio-button:hover {
-  background: #2196F3;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-button:hover .portfolio-button-text {
-  color: #FFFFFF;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfoliocard-list {
@@ -877,7 +742,6 @@ img {
   height: 300px;
   overflow: hidden;
 }
-
 .box:hover .overlay {
   transform: translatey(0);
 }
@@ -886,7 +750,6 @@ img {
   width: calc((100% - 90px) / 3);
   border: 1px solid #EEE;
 }
-
 .portfoliocard:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }

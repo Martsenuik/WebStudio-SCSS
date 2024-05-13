@@ -27,18 +27,18 @@
     align-items: center;
     justify-content: center;
 
+    &:hover {
+            border-color: $active-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
 }
 
 .costumers-svg {
     fill: #AFB1B8;
 
-}
-
-.costumers-item:hover {
-    border-color: $active-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .costumers-item:hover .costumers-svg {

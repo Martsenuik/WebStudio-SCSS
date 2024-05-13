@@ -22,6 +22,21 @@
     background: #F5F4FA;
     border-color: #FFF;
     border: none;
+
+    &:hover {
+            background: $active-color;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        }
+
+    &:hover .portfolio-button-text {
+        color: $primary-title-color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .portfolio-button-text {
@@ -31,23 +46,6 @@
     font-weight: 500;
     line-height: 163%;
     letter-spacing: 0.48px;
-}
-
-
-.portfolio-button:hover {
-    background: $active-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
-
-
-.portfolio-button:hover .portfolio-button-text {
-    color: $primary-title-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfoliocard-list {
@@ -62,21 +60,19 @@
     position: relative;
     height: 300px;
     overflow: hidden;
-
-}
-
-.box:hover .overlay {
-    transform: translatey(0);
-
+    
+    &:hover .overlay {
+            transform: translatey(0);
+        }
 }
 
 .portfoliocard {
     width: calc((100% - 15px * 6) / 3);
     border: 1px solid #EEE;
-}
 
-.portfoliocard:hover {
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    &:hover {
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+        }
 }
 
 .portfoliocard-title {
