@@ -8,7 +8,7 @@
 }
 
 .ourteam-title {
-    color: #212121;
+    color: $secondary-title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -44,7 +44,7 @@
 .svg-item:hover {
     fill: #FFF;
     border-radius: 100%;
-    background: #2196F3;
+    background: $active-color;
     transition: all 0.2s ease-out;
     transition-property: color;
     transition-duration: 250ms;
@@ -52,7 +52,7 @@
 }
 
 .ourteam-subtitles {
-    color: #212121;
+    color: $secondary-title-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -61,7 +61,7 @@
 }
 
 .ourteam-text {
-    color: #757575;
+    color: $primary-text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;

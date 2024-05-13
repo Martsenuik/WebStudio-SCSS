@@ -66,7 +66,7 @@ footer {
 .footer-icon-list {
     display: flex;
     padding-top: 32px;
-    fill: #FFFFFF;
+    fill: $primary-title-color;
 }
 
 .footer-icon-item {
@@ -77,7 +77,7 @@ footer {
 }
 
 .footer-icon-item:hover {
-    background: #2196F3;
+    background: $active-color;
 }
 
 .footer-box3 {
@@ -114,7 +114,7 @@ footer {
     text-align: center;
     padding: 10px 52px;
     border-radius: 4px;
-    background: #2196F3;
+    background: $active-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -148,7 +148,7 @@ footer {
 }
 
 .portfolio-button-text {
-    color: #212121;
+    color: $secondary-title-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
@@ -158,7 +158,7 @@ footer {
 
 
 .portfolio-button:hover {
-    background: #2196F3;
+    background: $active-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -167,7 +167,7 @@ footer {
 
 
 .portfolio-button:hover .portfolio-button-text {
-    color: #FFFFFF;
+    color: $primary-title-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -203,7 +203,7 @@ footer {
 }
 
 .portfoliocard-title {
-    color: #212121;
+    color: $secondary-title-color;
     font-size: 18px;
     font-weight: 700;
     line-height: 200%;
@@ -214,7 +214,7 @@ footer {
 
 .portfoliocard-text {
     width: 322px;
-    color: #757575;
+    color: $primary-text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 188%;

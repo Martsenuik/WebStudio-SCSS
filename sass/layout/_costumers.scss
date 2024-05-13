@@ -4,7 +4,7 @@
 }
 
 .costumers-title {
-    color: #212121;
+    color: $secondary-title-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -35,14 +35,14 @@
 }
 
 .costumers-item:hover {
-    border-color: #2196F3;
+    border-color: $active-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .costumers-item:hover .costumers-svg {
-    fill: #2196F3;
+    fill: $active-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
