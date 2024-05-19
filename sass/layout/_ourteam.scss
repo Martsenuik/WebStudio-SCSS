@@ -45,9 +45,7 @@
             border-radius: 100%;
             background: $active-color;
             transition: all 0.2s ease-out;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %transition !optional;
         }
 }
 

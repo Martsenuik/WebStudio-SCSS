@@ -33,9 +33,8 @@ header {
     letter-spacing: 0.28px;
     &:hover {
             color: $active-color;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %transition !optional;
+            
     }
 }
 
@@ -50,9 +49,7 @@ header {
             background: $active-color;
             display: block;
             top: 44px;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %transition !optional;
     }
 }
 
@@ -76,15 +73,11 @@ header {
 
     &:hover .header-contact-svg {
             fill: $active-color;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %transition !optional;
         }
     
     &:hover {
         color: $active-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition !optional;
     }
 }

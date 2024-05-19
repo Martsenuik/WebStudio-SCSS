@@ -29,9 +29,7 @@
 
     &:hover {
             border-color: $active-color;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %transition !optional;
         }
 
 }
@@ -43,7 +41,5 @@
 
 .costumers-item:hover .costumers-svg {
     fill: $active-color;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition !optional;
 }

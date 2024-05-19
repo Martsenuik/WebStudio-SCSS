@@ -25,17 +25,13 @@
 
     &:hover {
             background: $active-color;
-            transition-property: color;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            @extend %transition !optional;
             box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
         }
 
     &:hover .portfolio-button-text {
         color: $primary-title-color;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transition !optional;
     }
 }
 
@@ -71,7 +67,9 @@
     border: 1px solid #EEE;
 
     &:hover {
-            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+            box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+             0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.12);
         }
 }
 
