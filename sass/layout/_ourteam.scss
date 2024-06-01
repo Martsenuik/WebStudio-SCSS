@@ -1,67 +1,147 @@
-.section-ourteam {
-    background: #F5F4FA;
-    display: flex;
-    align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    justify-content: center;
-}
+// .section-ourteam {
+//     background: #F5F4FA;
+//     display: flex;
+//     align-items: center;
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//     justify-content: center;
+// }
 
-.ourteam-title {
-    color: $secondary-title-color;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    padding-bottom: 50px;
-}
+// .ourteam-title {
+//     color: $secondary-title-color;
+//     text-align: center;
+//     font-size: 36px;
+//     font-weight: 700;
+//     letter-spacing: 1.08px;
+//     padding-bottom: 50px;
+// }
 
-.ourteam-list {
-    display: flex;
-    gap: 30px;
-}
+// .ourteam-list {
+//     display: flex;
+//     gap: 30px;
+// }
 
-.ourteam-img {
-    width: 270px;
-    height: 260px;
-    padding-bottom: 30px;
-}
+// .ourteam-img {
+//     width: 270px;
+//     height: 260px;
+//     padding-bottom: 30px;
+// }
 
-.svg-list {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 44px;
-    padding-right: 44px;
-    padding-top: 28px;
-    fill: #AFB1B8;
+// .svg-list {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-left: 44px;
+//     padding-right: 44px;
+//     padding-top: 28px;
+//     fill: #AFB1B8;
 
-}
+// }
 
-.svg-item {
-    padding: 10px 12px;
+// .svg-item {
+//     padding: 10px 12px;
 
-    &:hover {
-            fill: #FFF;
-            border-radius: 100%;
-            background: $active-color;
-            transition: all 0.2s ease-out;
-            @extend %transition !optional;
+//     &:hover {
+//             fill: #FFF;
+//             border-radius: 100%;
+//             background: $active-color;
+//             transition: all 0.2s ease-out;
+//             @extend %transition !optional;
+//         }
+// }
+
+// .ourteam-subtitles {
+//     color: $secondary-title-color;
+//     text-align: center;
+//     font-size: 16px;
+//     font-weight: 500;
+//     letter-spacing: 0.48px;
+//     padding-bottom: 10px;
+// }
+
+// .ourteam-text {
+//     color: $primary-text-color;
+//     text-align: center;
+//     font-size: 16px;
+//     font-weight: 400;
+//     letter-spacing: 0.48px;
+// }
+
+@media screen and (max-width: 480px) {
+    .section-ourteam {
+            background: #F5F4FA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 60px;
+    }
+
+    .ourteam-title {
+                    color: $secondary-title-color;
+                    text-align: center;
+                    font-size: 28px;
+                    font-weight: 700;
+                    letter-spacing: 0.84px;
+                    padding-bottom: 50px;
+    }
+
+    .ourteam-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 30px;
+    }
+
+    .card{
+            gap: 30px;
+            width: 270px;
+            border-radius: 0px 0px 4px 4px;
+            box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+            
+    }
+
+    .ourteam-img {
+           width: 270px;
+           height: 260px;
+           padding-bottom: 30px;
+    }
+    
+    .svg-list {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 34px;
+            padding-right: 34px;
+            padding-top: 28px;
+            fill: #AFB1B8;
+    }
+
+    .svg-item {
+            padding: 10px 12px;
+
+            &:hover {
+                    fill: #FFF;
+                    border-radius: 100%;
+                    background: $active-color;
+                    transition: all 0.2s ease-out;
+                    @extend %transition !optional;
+                }
+    }
+
+        .ourteam-subtitles {
+            color: $secondary-title-color;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.48px;
+            padding-bottom: 10px;
         }
-}
+    
+        .ourteam-text {
+            color: $primary-text-color;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.48px;
+        }
 
-.ourteam-subtitles {
-    color: $secondary-title-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    padding-bottom: 10px;
-}
-
-.ourteam-text {
-    color: $primary-text-color;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.48px;
 }

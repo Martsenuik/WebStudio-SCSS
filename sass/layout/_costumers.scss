@@ -1,45 +1,92 @@
-.costumers {
-    padding-top: 59px;
-    padding-bottom: 94px;
-}
+// .costumers {
+//     padding-top: 59px;
+//     padding-bottom: 94px;
+// }
 
-.costumers-title {
-    color: $secondary-title-color;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: 1.08px;
-    padding-bottom: 50px;
-}
+// .costumers-title {
+//     color: $secondary-title-color;
+//     text-align: center;
+//     font-size: 36px;
+//     font-weight: 700;
+//     letter-spacing: 1.08px;
+//     padding-bottom: 50px;
+// }
 
-.costumers-list {
-    display: flex;
-    gap: 30px;
+// .costumers-list {
+//     display: flex;
+//     gap: 30px;
 
-}
+// }
 
-.costumers-item {
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+// .costumers-item {
+//     width: 170px;
+//     height: 92px;
+//     border-radius: 4px;
+//     border: 1px solid #AFB1B8;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
 
-    &:hover {
+//     &:hover {
+//             border-color: $active-color;
+//             @extend %transition !optional;
+//         }
+
+// }
+
+// .costumers-svg {
+//     fill: #AFB1B8;
+// }
+
+// .costumers-item:hover .costumers-svg {
+//     fill: $active-color;
+//     @extend %transition !optional;
+// }
+
+@media screen and (max-width: 480px) {
+    .costumers {
+ 
+    }
+
+        .costumers-title {
+            color: $secondary-title-color;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 0.84px;
+            padding-bottom: 50px;
+        }
+
+        .costumers-list {
+                    display: flex;
+                    gap: 30px;
+                    flex-wrap: wrap;
+        
+        }
+
+        .costumers-item {
+        width: 210px;
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid #AFB1B8;
+        display: flex;
+
+        &:hover {
             border-color: $active-color;
             @extend %transition !optional;
         }
+        
+        }
 
-}
+        .costumers-svg {
+            fill: #AFB1B8;
+            margin-top: 16px;
+            margin-left: 52px;
 
-.costumers-svg {
-    fill: #AFB1B8;
+        }
 
-}
-
-.costumers-item:hover .costumers-svg {
-    fill: $active-color;
-    @extend %transition !optional;
+                .costumers-item:hover .costumers-svg {
+                    fill: $active-color;
+                    @extend %transition !optional;
+                }
 }

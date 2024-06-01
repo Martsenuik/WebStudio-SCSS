@@ -1,65 +1,131 @@
-.section-info {
-    display: flex;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    align-items: center;
-    justify-content: space-between;
-}
+// .section-info {
+//     display: flex;
+//     padding-top: 90px;
+//     padding-bottom: 90px;
+//     align-items: center;
+//     justify-content: space-between;
+// }
 
-.info-list {
-    display: flex;
-}
+// .info-list {
+//     display: flex;
+// }
 
-.info-item {
-    padding-left: 30px;
-}
+// .info-item {
+//     padding-left: 30px;
+// }
 
-.info-svg {
-    border-radius: 4px;
-    background: #F5F4FA;
-    margin-bottom: 30px;
-    background-position: center;
-    padding: 25px 100px;
-    width: 270px;
-    height: 120px;
-}
+// .info-svg {
+//     border-radius: 4px;
+//     background: #F5F4FA;
+//     margin-bottom: 30px;
+//     background-position: center;
+//     padding: 25px 100px;
+//     width: 270px;
+//     height: 120px;
+// }
 
-.info-antena {
-    background-image: url(img/antenna.svg);
-}
+// .info-antena {
+//     background-image: url(img/antenna.svg);
+// }
 
-.info-svg {
-    fill: $base-color;
-}
+// .info-svg {
+//     fill: $base-color;
+// }
 
-.info-clock {
-    background-image: url(img/clock.svg);
-}
+// .info-clock {
+//     background-image: url(img/clock.svg);
+// }
 
-.info-diagram {
-    background-image: url(img/diagram.svg);
-}
+// .info-diagram {
+//     background-image: url(img/diagram.svg);
+// }
 
-.info-astronaut {
-    background-image: url(img/astronaut.svg);
-}
+// .info-astronaut {
+//     background-image: url(img/astronaut.svg);
+// }
 
-.info-titles {
-    width: 270px;
-    color: $secondary-title-color;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
+// .info-titles {
+//     width: 270px;
+//     color: $secondary-title-color;
+//     font-size: 14px;
+//     font-weight: 700;
+//     letter-spacing: 0.42px;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+// }
 
-.info-text {
-    width: 270px;
-    height: 72px;
-    color: $primary-text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 171%;
-    letter-spacing: 0.42px;
+// .info-text {
+//     width: 270px;
+//     height: 72px;
+//     color: $primary-text-color;
+//     font-size: 14px;
+//     font-weight: 400;
+//     line-height: 171%;
+//     letter-spacing: 0.42px;
+// }
+
+@media screen and (max-width: 480px) {
+   .section-info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+   }
+   .info-list {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 60px;
+   }
+   .info-item {
+    
+   }
+   .info-svg {
+       border-radius: 4px;
+       background: #F5F4FA;
+       margin-bottom: 30px;
+       background-position: center;
+       padding: 25px 100px;
+       width: 450px;
+       height: 120px;
+   }
+
+   .info-antena {
+       background-image: url(img/antenna.svg);
+   }
+
+   .info-svg {
+       fill: $base-color;
+   }
+
+   .info-clock {
+       background-image: url(img/clock.svg);
+   }
+
+   .info-diagram {
+       background-image: url(img/diagram.svg);
+   }
+
+   .info-astronaut {
+       background-image: url(img/astronaut.svg);
+   }
+
+   .info-titles {
+       width: 270px;
+       color: $secondary-title-color;
+       font-size: 14px;
+       font-weight: 700;
+       letter-spacing: 0.42px;
+       text-transform: uppercase;
+       margin-bottom: 10px;
+   }
+
+   .info-text {
+       width: 450px;
+       height: 50px;
+       color: $primary-text-color;
+       font-size: 14px;
+       font-weight: 400;
+       line-height: 171%;
+       letter-spacing: 0.42px;
+   }
 }
