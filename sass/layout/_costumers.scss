@@ -45,7 +45,8 @@
 
 @media screen and (max-width: 480px) {
     .costumers {
- 
+      
+        
     }
 
         .costumers-title {
@@ -61,6 +62,7 @@
                     display: flex;
                     gap: 30px;
                     flex-wrap: wrap;
+                    margin-bottom: 60px;
         
         }
 
@@ -70,6 +72,9 @@
         border-radius: 4px;
         border: 1px solid #AFB1B8;
         display: flex;
+        justify-content: center;
+            align-items: center;
+        
 
         &:hover {
             border-color: $active-color;
@@ -80,9 +85,6 @@
 
         .costumers-svg {
             fill: #AFB1B8;
-            margin-top: 16px;
-            margin-left: 52px;
-
         }
 
                 .costumers-item:hover .costumers-svg {

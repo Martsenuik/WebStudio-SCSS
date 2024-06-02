@@ -64,6 +64,10 @@
 //     letter-spacing: 0.42px;
 // }
 
+
+////////////////// mobile///////////////////
+
+
 @media screen and (max-width: 480px) {
    .section-info{
             display: flex;
@@ -129,3 +133,76 @@
        letter-spacing: 0.42px;
    }
 }
+
+////////////////// tablet///////////////////
+
+
+@media screen and (max-width: 768) {
+    .section-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        width: 738px;
+        height: 480px;
+  
+    }
+
+    .info-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+    }
+
+    .info-item {
+
+    }
+
+    .info-svg {
+        border-radius: 4px;
+        background: #F5F4FA;
+        padding: 25px 142px;
+        width: 354px;
+        height: 120px;
+        fill: $base-color;
+    }
+
+    .info-antena {
+        background-image: url(img/antenna.svg);
+    }
+
+    .info-clock {
+        background-image: url(img/clock.svg);
+    }
+
+    .info-diagram {
+        background-image: url(img/diagram.svg);
+    }
+
+    .info-astronaut {
+        background-image: url(img/astronaut.svg);
+    }
+
+    .info-titles {
+        width: 270px;
+        color: $secondary-title-color;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .info-text {
+        width: 354px;
+        height: 48px;
+        color: $primary-text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.42px;
+    }
+}
+
+//////////////////desktop///////////////////

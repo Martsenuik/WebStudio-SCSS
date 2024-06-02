@@ -41,4 +41,10 @@
 @media screen and (max-width: 480px) {
     display: none;
 }
+@media screen and (max-width: 768) {
+    display: none;
+}
+@media screen and (max-width: 1200) {
+    display: flex;
+}
 }
