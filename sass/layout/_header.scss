@@ -34,7 +34,7 @@
 //     &:hover {
 //             color: $active-color;
 //             @extend %transition !optional;
-            
+
 //     }
 // }
 
@@ -58,7 +58,6 @@
 //     gap: 30px;
 // }
 
-
 // .header-contact-svg {
 //     fill: $primary-text-color;
 //     margin-right: 9px;
@@ -75,34 +74,33 @@
 //             fill: $active-color;
 //             @extend %transition !optional;
 //         }
-    
+
 //     &:hover {
 //         color: $active-color;
 //         @extend %transition !optional;
 //     }
 // }
+header {
+  display: flex;
+  align-items: center;
 
-@media screen and (max-width: 480px) {
-    header {
-            display: flex;
-            align-items: center;
-            
-            justify-content: space-between;
-        }
+  justify-content: space-between;
+}
 
-        .logoweb {
-            color: $active-color;
-            padding-left: 15px;
-        }
+.logoweb {
+  color: $active-color;
+  padding-left: 15px;
+}
 
-        .logostudio {
-            color: $base-color;
-            font-family: Raleway;
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: 0.72px;
-            padding-bottom: 16px;
-            padding-top: 16px;
-            
-        }
+.logostudio {
+  color: $base-color;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
 }

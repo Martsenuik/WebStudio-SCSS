@@ -120,146 +120,149 @@
 //     fill: #FFF;
 //     align-items: center;
 // }
+footer {
+  background: #2f303a;
+  padding: 60px 0;
+  text-align: center;
+}
 
-@media screen and (max-width: 480px) {
-    footer {
-            background: #2F303A;
-            display: flex;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+.footer-box-parent {
+  display: flex;
+  flex-direction: column;
+}
 
-        .footer-box-parent {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+.footer-box1 {
+}
 
-        .logostudio2 {
-            color: #FFF;
-            font-family: Raleway;
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: 0.72px;
-            display: flex;
-            margin-bottom: 20px;
+.logostudio2 {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+}
 
-        }
+.logoweb {
+  width: 154px;
+  color: #2196f3;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 700;
+}
 
-        
+.address {
+  // width: 231px;
+  height: 21px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  align-items: center;
+  justify-content: center;
+}
 
-        .address {
-            width: 231px;
-            height: 21px;
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.42px;
-            align-items: center;
-                justify-content: center;
-        }
+.mail {
+  width: 232px;
+  height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
 
-        .mail {
-            width: 232px;
-            height: 21px;
-            color: rgba(255, 255, 255, 0.60);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-        }
+.phone {
+  width: 232px;
+  height: 21px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
 
-        .phone {
-            width: 232px;
-            height: 21px;
-            color: rgba(255, 255, 255, 0.60);
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: 0.42px;
-            
-        }
+.footer-box2 {
+  padding-top: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-        .footer-box2 {
-                display: flex;
-                flex-direction: column;
-                padding-top: 60px;
-                align-items: center;
-                justify-content: center;
-        }
+.footer-join {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
 
-        .footer-join {
-            color: #FFF;
-            font-size: 14px;
-            font-weight: 700;
-            letter-spacing: 0.42px;
-            text-transform: uppercase;
-        }
+.footer-icon-list {
+  display: flex;
+  padding-top: 32px;
+  fill: $primary-title-color;
+  justify-content: center;
+}
 
-        .footer-icon-list {
-            display: flex;
-            padding-top: 32px;
-            fill: $primary-title-color;
-        }
+.footer-icon-item {
+  margin-right: 10px;
+  padding: 12px 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 
-        .footer-icon-item {
-            margin-right: 10px;
-            padding: 12px 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.10);
-    
-            &:hover {
-                background: $active-color;
-            }
-        }
+  &:hover {
+    background: $active-color;
+  }
+}
 
-        .footer-box3 {
-            display: flex;
-            flex-direction: column;
-            padding-top: 60px;
-            align-items: center;
-        }
+.footer-box3 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  align-items: center;
+}
 
-        .subscription-box {
-            margin-top: 20px;
-            display: flex;
-        }
+.subscription-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-        .subscription-input {
-            width: 450px;
-            height: 50px;
-            border-radius: 4px;
-            border: 1px solid rgba(255, 255, 255, 0.30);
-            background: rgba(33, 150, 243, 0.00);
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-            margin-right: 12px;
-            color: #fff;
-        }
+.subscription-input {
+  // width: 450px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  // margin-right: 12px;
+  color: #fff;
+  width: 450px;
+}
 
-        .subscription-button {
-            border: none;
-            display: flex;
-            color: #FFF;
-            text-align: center;
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 30px;
-            letter-spacing: 0.96px;
-            align-items: center;
-            text-align: center;
-            padding: 10px 52px;
-            border-radius: 4px;
-            background: $active-color;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        }
+.subscription-button {
+  border: none;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.96px;
+  align-items: center;
+  text-align: center;
+  padding: 10px 52px;
+  border-radius: 4px;
+  background: $active-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  margin: 0 auto;
+}
 
-        .subscription-svg {
-            fill: #FFF;
-            align-items: center;
-        }
+.subscription-svg {
+  fill: #fff;
+  align-items: center;
+}
+
+/////////////////////tablet/////////////////////
+
+@media screen and (min-width: 768px) {
 }

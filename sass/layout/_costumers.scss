@@ -42,53 +42,48 @@
 //     fill: $active-color;
 //     @extend %transition !optional;
 // }
+.costumers {
+}
 
-@media screen and (max-width: 480px) {
-    .costumers {
-      
-        
-    }
+.costumers-title {
+  color: $secondary-title-color;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.84px;
+  padding-bottom: 50px;
+}
 
-        .costumers-title {
-            color: $secondary-title-color;
-            text-align: center;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 0.84px;
-            padding-bottom: 50px;
-        }
+.costumers-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
 
-        .costumers-list {
-                    display: flex;
-                    gap: 30px;
-                    flex-wrap: wrap;
-                    margin-bottom: 60px;
-        
-        }
+.costumers-item {
+  width: 210px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-        .costumers-item {
-        width: 210px;
-        height: 92px;
-        border-radius: 4px;
-        border: 1px solid #AFB1B8;
-        display: flex;
-        justify-content: center;
-            align-items: center;
-        
+  &:hover {
+    border-color: $active-color;
+    @extend %transition !optional;
+  }
+}
 
-        &:hover {
-            border-color: $active-color;
-            @extend %transition !optional;
-        }
-        
-        }
+.costumers-svg {
+  fill: #afb1b8;
+}
 
-        .costumers-svg {
-            fill: #AFB1B8;
-        }
+.costumers-item:hover .costumers-svg {
+  fill: $active-color;
+  @extend %transition !optional;
+}
 
-                .costumers-item:hover .costumers-svg {
-                    fill: $active-color;
-                    @extend %transition !optional;
-                }
+@media screen and (min-width: 768px) {
 }
