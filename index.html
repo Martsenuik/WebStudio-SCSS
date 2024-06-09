@@ -185,37 +185,39 @@
 
       <!-------------------- section photo ---------------------------->
 
-      <section class="photo container">
-        <h2 class="photo-title">Чим ми займаємося</h2>
-        <ul class="photo-list">
-          <li class="photo-item">
-            <img
-              src="img/box1.jpg"
-              alt="Computer"
-              width="370px"
-              height="294px"
-            />
-            <p class="photo-text">Десктопні додатки</p>
-          </li>
-          <li class="photo-item">
-            <img
-              src="img/box2.jpg"
-              alt="Computer"
-              width="370px"
-              height="294px"
-            />
-            <p class="photo-text">Мобільні додатки</p>
-          </li>
-          <li class="photo-item">
-            <img
-              src="img/box3.jpg"
-              alt="Computer"
-              width="370px"
-              height="294px"
-            />
-            <p class="photo-text">Дизайнерські рішення</p>
-          </li>
-        </ul>
+      <section class="section-photo container">
+        <div class="photo-parent">
+          <h2 class="photo-title">Чим ми займаємося</h2>
+          <ul class="photo-list">
+            <li class="photo-item">
+              <img
+                src="img/box1.jpg"
+                alt="Computer"
+                width="370px"
+                height="294px"
+              />
+              <p class="photo-text">Десктопні додатки</p>
+            </li>
+            <li class="photo-item">
+              <img
+                src="img/box2.jpg"
+                alt="Computer"
+                width="370px"
+                height="294px"
+              />
+              <p class="photo-text">Мобільні додатки</p>
+            </li>
+            <li class="photo-item">
+              <img
+                src="img/box3.jpg"
+                alt="Computer"
+                width="370px"
+                height="294px"
+              />
+              <p class="photo-text">Дизайнерські рішення</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!---------------------------- ourteam -------------------------------->
@@ -224,7 +226,7 @@
         <div class="container">
           <h2 class="ourteam-title">Наша команда</h2>
           <ul class="ourteam-list">
-            <li class="card">
+            <li class="ourteam-item">
               <img
                 class="ourteam-img"
                 src="./img/man1.jpg"
@@ -257,7 +259,7 @@
                 </li>
               </ul>
             </li>
-            <li class="card">
+            <li class="ourteam-item">
               <img
                 class="ourteam-img"
                 src="./img/women2.jpg"
@@ -290,7 +292,7 @@
                 </li>
               </ul>
             </li>
-            <li class="card">
+            <li class="ourteam-item">
               <img
                 class="ourteam-img"
                 src="./img/man3.jpg"
@@ -323,7 +325,7 @@
                 </li>
               </ul>
             </li>
-            <li class="card">
+            <li class="ourteam-item">
               <img
                 class="ourteam-img"
                 src="./img/man4.jpg"
@@ -407,50 +409,53 @@
     <!----------------------------- footer -------------------------------->
     <footer class="footer">
       <div class="container footer-box-parent">
-        <div class="footer-box1">
-          <a href="index.html" class="logostudio2"
-            ><span class="logoweb">Web</span>Studio</a
-          >
-          <ul class="">
-            <li>
-              <address id="contacts" class="address">
-                м. Київ, пр-т Лесі Українки, 26
-              </address>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="mail"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-box2">
-          <h3 class="footer-join">приєднуйтесь</h3>
-          <ul class="footer-icon-list">
-            <li class="footer-icon-item">
-              <svg class="footer-svg" width="20" height="20">
-                <use href="img/symbol-defs.svg#instagram"></use>
-              </svg>
-            </li>
-            <li class="footer-icon-item">
-              <svg class="footer-svg" width="20" height="20">
-                <use href="img/symbol-defs.svg#twitter"></use>
-              </svg>
-            </li>
-            <li class="footer-icon-item">
-              <svg class="footer-svg" width="20" height="20">
-                <use href="img/symbol-defs.svg#facebook"></use>
-              </svg>
-            </li>
-            <li class="footer-icon-item">
-              <svg class="footer-svg" width="20" height="20">
-                <use href="img/symbol-defs.svg#linkedin"></use>
-              </svg>
-            </li>
-          </ul>
+        <div class="foter_box_1_2">
+          <div class="footer-box1">
+            <a href="index.html" class="logostudio2"
+              ><span class="logoweb2">Web</span>Studio</a
+            >
+            <ul class="">
+              <li>
+                <address id="contacts" class="address">
+                  м. Київ, пр-т Лесі Українки, 26
+                </address>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="phone">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-box2">
+            <h3 class="footer-join">приєднуйтесь</h3>
+            <ul class="footer-icon-list">
+              <li class="footer-icon-item">
+                <svg class="footer-svg" width="20" height="20">
+                  <use href="img/symbol-defs.svg#instagram"></use>
+                </svg>
+              </li>
+              <li class="footer-icon-item">
+                <svg class="footer-svg" width="20" height="20">
+                  <use href="img/symbol-defs.svg#twitter"></use>
+                </svg>
+              </li>
+              <li class="footer-icon-item">
+                <svg class="footer-svg" width="20" height="20">
+                  <use href="img/symbol-defs.svg#facebook"></use>
+                </svg>
+              </li>
+              <li class="footer-icon-item">
+                <svg class="footer-svg" width="20" height="20">
+                  <use href="img/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-box3">
           <p class="footer-join">Підпишіться на розсилку</p>
