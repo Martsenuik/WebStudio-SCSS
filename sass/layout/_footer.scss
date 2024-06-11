@@ -120,7 +120,10 @@
 //     fill: #FFF;
 //     align-items: center;
 // }
-footer {
+
+///////////////////////// mobile////////////////////
+
+.footer {
   background: #2f303a;
   padding: 60px 0;
   text-align: center;
@@ -264,6 +267,8 @@ footer {
   fill: #fff;
   align-items: center;
 }
+
+///////////////////////// tablet////////////////////
 
 @media screen and (min-width: 768px) {
   footer {
@@ -415,6 +420,8 @@ footer {
     align-items: center;
   }
 }
+
+///////////////////////// desktop////////////////////
 
 @media screen and (min-width: 1200px) {
   .footer {

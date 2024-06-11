@@ -42,6 +42,8 @@
 //     fill: $active-color;
 //     @extend %transition !optional;
 // }
+
+///////////////////////// mobile////////////////////
 .costumers {
 }
 
@@ -84,6 +86,8 @@
   fill: $active-color;
   @extend %transition !optional;
 }
+
+///////////////////////// tablet////////////////////
 
 @media screen and (min-width: 768px) {
   .costumers {
@@ -133,6 +137,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+///////////////////////// desktop////////////////////
 
 @media screen and (min-width: 1200px) {
   .costumers {

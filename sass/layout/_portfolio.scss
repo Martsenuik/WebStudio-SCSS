@@ -116,6 +116,9 @@
 // .footer-portfolio {
 //     margin-top: 94px;
 // }
+
+///////////////////////// mobile////////////////////
+
 .line-portfolio {
   background: #ececec;
 }
@@ -235,6 +238,8 @@ img {
   width: 370px;
   height: 294px;
 }
+
+///////////////////////// tablet////////////////////
 @media screen and (min-width: 768px) {
   .line-portfolio {
     background: #ececec;
@@ -363,6 +368,8 @@ img {
     height: 294px;
   }
 }
+
+///////////////////////// desktop////////////////////
 
 @media screen and (min-width: 1200px) {
   .line-portfolio {

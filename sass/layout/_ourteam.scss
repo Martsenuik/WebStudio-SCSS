@@ -66,6 +66,8 @@
 //     letter-spacing: 0.48px;
 // }
 
+///////////////////////// mobile////////////////////
+
 .section-ourteam {
   background: #f5f4fa;
   margin-bottom: 60px;
@@ -152,6 +154,8 @@
   letter-spacing: 0.48px;
 }
 
+///////////////////////// tablet////////////////////
+
 @media screen and (min-width: 768px) {
   .section-ourteam {
     background: #f5f4fa;
@@ -230,6 +234,8 @@
     letter-spacing: 0.48px;
   }
 }
+
+///////////////////////// desktop////////////////////
 
 @media screen and (min-width: 1200px) {
   .section-ourteam {
