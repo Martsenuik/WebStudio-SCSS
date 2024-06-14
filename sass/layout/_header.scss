@@ -85,13 +85,11 @@
 header {
   display: flex;
   align-items: center;
-
   justify-content: space-between;
 }
 
 .logoweb {
   color: $active-color;
-  padding-left: 15px;
 }
 
 .logostudio {
@@ -100,8 +98,39 @@ header {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.72px;
-  padding-bottom: 16px;
   padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header-mobile-menu {
+  display: none;
+}
+
+.navigation {
+}
+
+.nav-list {
+}
+
+.nav-item {
+  width: 219px;
+  height: 48px;
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+
+.header-contact-list {
+}
+
+.header-contact-item {
+}
+
+.header-contact-a {
+}
+
+.header-contact-svg {
 }
 
 ///////////////////////// tablet////////////////////
@@ -111,7 +140,6 @@ header {
     display: flex;
     align-items: center;
     padding-top: 26px;
-    padding-bottom: 9px;
     justify-content: space-between;
   }
 
@@ -122,19 +150,25 @@ header {
   .logostudio {
     color: $base-color;
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
+    padding-top: 0;
+    padding-bottom: 26px;
+  }
+
+  .header-mobile-menu {
+    display: flex;
   }
 
   .navigation {
-    font-size: 500;
   }
 
   .nav-list {
     display: flex;
-    gap: 51px;
-    padding-left: 42px;
+    gap: 50px;
+    padding-left: 88px;
+    padding-bottom: 26px;
   }
 
   .nav-item {
@@ -166,7 +200,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    padding-left: 91px;
+    padding-left: 80px;
   }
 
   .header-contact-svg {
@@ -177,9 +211,9 @@ header {
   .header-contact-a {
     color: $primary-text-color;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.24px;
 
     &:hover .header-contact-svg {
       fill: $active-color;
