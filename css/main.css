@@ -60,13 +60,51 @@ header {
   display: none;
 }
 
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+
 .nav-item {
-  width: 219px;
+  width: 192px;
   height: 48px;
   color: #212121;
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 0.8px;
+}
+
+.button-open-menu {
+  border: none;
+  background: none;
+}
+
+.svg-open-menu {
+  width: 40px;
+  height: 40px;
+}
+
+.backdrop-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.backdrop-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.svg-close-menu {
+  width: 40px;
+  height: 40px;
+  fill: #212121;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,6 +131,7 @@ header {
   }
   .nav-list {
     display: flex;
+    flex-direction: row;
     gap: 50px;
     padding-left: 88px;
     padding-bottom: 26px;
@@ -310,10 +349,7 @@ header {
 }
 
 .footer-box3 {
-  display: flex;
-  flex-direction: column;
   padding-top: 60px;
-  align-items: center;
 }
 
 .subscription-box {
@@ -327,13 +363,14 @@ header {
 }
 
 .subscription-input {
+  width: 100%;
   height: 50px;
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
   color: #fff;
-  width: 450px;
 }
 
 .subscription-button {
@@ -644,12 +681,10 @@ header {
 }
 
 .main-title {
-  width: 360px;
   color: #ffffff;
   text-align: center;
   font-size: 26px;
   font-weight: 900;
-  line-height: 42px;
   letter-spacing: 1.56px;
   text-transform: uppercase;
 }
@@ -674,7 +709,6 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000;
   opacity: 1;
 }
 
@@ -1278,9 +1312,9 @@ header {
   border-radius: 4px;
   background: #f5f4fa;
   margin-bottom: 30px;
-  background-position: center;
-  padding: 25px 100px;
-  width: 450px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
   height: 120px;
 }
 
@@ -1315,8 +1349,6 @@ header {
 }
 
 .info-text {
-  width: 450px;
-  height: 50px;
   color: #757575;
   font-size: 14px;
   font-weight: 400;
@@ -1503,8 +1535,7 @@ header {
 }
 
 .ourteam-item {
-  width: 450px;
-  height: 622px;
+  padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -1518,8 +1549,6 @@ header {
 }
 
 .ourteam-img {
-  width: 450px;
-  height: 460px;
   padding-bottom: 30px;
 }
 
@@ -1713,7 +1742,7 @@ header {
 }
 
 .costumers-item {
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
   border-radius: 4px;
   border: 1px solid #afb1b8;

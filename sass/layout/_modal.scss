@@ -247,12 +247,10 @@
 }
 
 .main-title {
-  width: 360px;
   color: $primary-title-color;
   text-align: center;
   font-size: 26px;
   font-weight: 900;
-  line-height: 42px;
   letter-spacing: 1.56px;
   text-transform: uppercase;
 }
@@ -277,7 +275,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: $base-color;
   opacity: 1;
 }
 
