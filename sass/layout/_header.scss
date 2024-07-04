@@ -170,9 +170,15 @@ header {
 }
 
 .svg-close-menu {
+  position: relative;
+  left: 400px;
   width: 40px;
   height: 40px;
   fill: #212121;
+
+  &:hover {
+    fill: #2196f3;
+  }
 }
 .menu-header-list {
   display: flex;
@@ -218,6 +224,10 @@ header {
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.36px;
+  border-right: #21212133;
+  border-width: 2px;
+  padding-right: 9px;
+  padding-left: 9px;
 }
 
 ///////////////////////// tablet////////////////////
