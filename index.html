@@ -59,19 +59,36 @@
           </li>
         </ul>
       </div>
-      <button class="button-open-menu modal-open">
+      <button class="button-open-menu open-mobile-modal">
         <svg class="svg-open-menu" width="40" height="40">
           <use href="./img/symbol-defs.svg#menu_svg"></use>
         </svg>
       </button>
 
-      <div class="backdrop-menu is-hidden" data-modal>
+      <div class="backdrop-menu is-hidden" data-mobile-modal>
         <div class="modal-menu">
-          <button class="button-close-menu close-modal">
+          <button class="button-close-menu close-mobile-modal">
             <svg class="svg-close-menu">
               <use href="./img/symbol-defs.svg#close-menu"></use>
             </svg>
           </button>
+          <ul class="menu-header-list">
+            <li class="menu-header-item"><a href="#">Студія</a></li>
+            <li class="menu-header-item"><a href="#">Портфоліо</a></li>
+            <li class="menu-header-item"><a href="#">Контакти</a></li>
+          </ul>
+          <ul class="menu-contact-list">
+            <li class="menu-contact-item"><a href="#">+38 096 111 11 11</a></li>
+            <li class="menu-contact-item">
+              <a href="#">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-join-list">
+            <li class="menu-join-item">Instagram</li>
+            <li class="menu-join-item">Twitter</li>
+            <li class="menu-join-item">Facebook</li>
+            <li class="menu-join-item">LinkedIn</li>
+          </ul>
         </div>
       </div>
     </header>
@@ -496,6 +513,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
