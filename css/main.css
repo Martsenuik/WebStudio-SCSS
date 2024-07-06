@@ -741,7 +741,7 @@ header {
   }
 }
 .main {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img@2x.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mobile/header_img.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -752,6 +752,11 @@ header {
   flex-direction: column;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url("header_img@2x.png");
+  }
+}
 .main-title {
   color: #ffffff;
   text-align: center;
@@ -964,7 +969,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/tablet_header_img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -975,6 +980,13 @@ header {
     justify-content: center;
     flex-direction: column;
   }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .box {
+    background-image: url("tablet_header_img@2x.png");
+  }
+}
+@media screen and (min-width: 768px) {
   .main-title {
     width: 360px;
     color: #ffffff;
@@ -1167,7 +1179,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .main {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/desktop_header_img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1178,6 +1190,13 @@ header {
     justify-content: center;
     flex-direction: column;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .box {
+    background-image: url("desktop_header_img@2x.png");
+  }
+}
+@media screen and (min-width: 1200px) {
   .main-title {
     width: 360px;
     color: #ffffff;
