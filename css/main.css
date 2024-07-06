@@ -33,6 +33,12 @@ a {
   color: currentColor;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: Roboto;
 }
@@ -735,7 +741,7 @@ header {
   }
 }
 .main {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img@2x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -839,6 +845,7 @@ header {
   margin-left: 40px;
   flex-direction: column;
   align-items: flex-start;
+  gap: 10px;
 }
 
 .modal-item:focus-within,
@@ -847,6 +854,8 @@ header {
 }
 
 .modal-p {
+  display: flex;
+  flex-direction: column;
   color: #757575;
   font-family: Roboto;
   font-size: 12px;
@@ -867,20 +876,20 @@ header {
 
 .input-icon-name {
   position: absolute;
-  top: 119px;
-  left: 68px;
+  top: 125px;
+  left: 58px;
 }
 
 .input-icon-tel {
   position: absolute;
-  top: 169px;
-  left: 59px;
+  top: 189px;
+  left: 58px;
 }
 
 .input-icon-email {
   position: absolute;
-  top: 228px;
-  left: 59px;
+  top: 252px;
+  left: 58px;
 }
 
 .modal-textarea {
