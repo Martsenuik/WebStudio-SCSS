@@ -28,42 +28,80 @@
       <a href="index.html" class="logostudio"
         ><span class="logoweb">Web</span>Studio</a
       >
-      <nav class="navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" class="nav-item">Студія</a></li>
-          <li>
-            <a href="portfolio.html" class="nav-item active">Портфоліо</a>
+      <div class="header-mobile-menu">
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-item active">Студія</a></li>
+            <li>
+              <a href="portfolio.html" class="nav-item">Портфоліо</a>
+            </li>
+            <li>
+              <a href="#contacts" class="nav-item">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header-contact-list">
+          <li class="header-contact-item">
+            <a href="mailto:info@devstudio.com" class="header-contact-a">
+              <svg class="header-contact-svg" width="16" height="12">
+                <use href="./img/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a href="#contacts" class="nav-item">Контакти</a>
+          <li class="header-contact-item">
+            <a href="tel:+380961111111" class="header-contact-a">
+              <svg class="header-contact-svg" width="10" height="16">
+                <use href="./img/symbol-defs.svg#smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
+      </div>
 
-      <ul class="header-contact-list">
-        <li class="header-contact-item">
-          <a href="mailto:info@devstudio.com" class="header-contact-a">
-            <svg class="header-contact-svg" width="16" height="12">
-              <use href="./img/symbol-defs.svg#envelope"></use>
+      <!-------------------- mobile-header ----------------------->
+
+      <button class="button-open-menu open-mobile-modal">
+        <svg class="svg-open-menu" width="40" height="40">
+          <use href="./img/symbol-defs.svg#menu_svg"></use>
+        </svg>
+      </button>
+
+      <div class="backdrop-menu is-hidden" data-mobile-modal>
+        <div class="modal-menu">
+          <button class="button-close-menu close-mobile-modal">
+            <svg class="svg-close-menu">
+              <use href="./img/symbol-defs.svg#close-menu"></use>
             </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contact-item">
-          <a href="tel:+380961111111" class="header-contact-a">
-            <svg class="header-contact-svg" width="10" height="16">
-              <use href="./img/symbol-defs.svg#smartphone"></use></svg
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-
+          </button>
+          <ul class="menu-header-list">
+            <li class="menu-header-item"><a href="index.html">Студія</a></li>
+            <li class="menu-header-item">
+              <a href="portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-header-item"><a href="#contacts">Контакти</a></li>
+          </ul>
+          <ul class="menu-contact-list">
+            <li class="menu-contact-item"><a href="#">+38 096 111 11 11</a></li>
+            <li class="menu-contact-item">
+              <a href="#">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="menu-join-list">
+            <li class="menu-join-item">Instagram</li>
+            <li class="menu-join-item">Twitter</li>
+            <li class="menu-join-item">Facebook</li>
+            <li class="menu-join-item">LinkedIn</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <hr class="line-portfolio">
+    
     <main>
-
       <section class="section-portfolio-buttons container">
-        <div class="portfolio-button-parent">
+        <div class="portfolio-button-list">
         <ul class="portfolio-button-list">
           <li>
             <button class="portfolio-button">
@@ -323,5 +361,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
