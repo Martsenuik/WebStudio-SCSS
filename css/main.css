@@ -2045,11 +2045,6 @@ header {
   letter-spacing: 0.54px;
 }
 
-img {
-  width: 450px;
-  height: 294px;
-}
-
 @media screen and (min-width: 768px) {
   .line-portfolio {
     background: #ececec;
